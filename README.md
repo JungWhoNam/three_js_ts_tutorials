@@ -1,10 +1,37 @@
-This repo contains resources for three.js with TS.
+This repo contains resources for three.js with TS. This sample project will create a wireframe cube with OrbitControls, dat.gui, and stats panel.
 
 I followed these tutorials:
 * https://threejs.org/docs/#manual/en/introduction/Installation.
 * https://sbcode.net/threejs/create-threejs-boilerplate/
 
-# Create a boilerplate
+# Install
+```shell
+git clone https://github.com/JungWhoNam/three_js_ts_tutorials.git
+
+cd three_js_ts_tutorials
+
+# install required packages as shown in the package.json file
+npm install
+```
+> See below if interested in starting a project from scratch.
+
+# Develop
+```shell
+npm run dev
+```
+Visit http://localhost:5173
+
+# Build
+```shell
+# build the production version 
+npm run build
+
+# preview it locally in the browser
+npm run preview
+```
+Visit http://localhost:4173/
+
+# Or create a project from scratch
 ```shell
 # if have not, install node.js from https://nodejs.org/en
 
@@ -13,9 +40,7 @@ npm create vite@latest
 # 1. type a project name
 # 2. select `Vanilla`
 # 3. select `TypeScript`
-```
-# Installation and Run
-```shell
+
 # cd to the new folder
 
 # install required packages as shown in the package.json file
@@ -30,14 +55,8 @@ npm install dat.gui@latest --save-dev
 npm install @types/dat.gui@latest --save-dev
 ```
 
-```shell
-npm run dev
-```
-
-If everything went well, you'll see a URL like http://localhost:5173 appear in your terminal, and can open that URL to see your web application.
-
-# Sample Project
-This will create a spinning wireframe cube.
+## .gitignore
+`vite` creates one when you run `npm create vite@latest`.
 
 ## ./index.html
 ```html
@@ -122,6 +141,3 @@ function animate() {
 
 animate()
 ```
-
-## .gitignore
-`vite` creates one when you run `npm create vite@latest`.
